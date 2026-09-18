@@ -1,0 +1,4 @@
+# We determine the quadrant using a dictionary with a tuple as the key.
+x, y = 1, -3   # It`s for example
+d = {(True, True): 1, (False, True): 2, (True, False): 4, (False, False): 3}
+print("it`s a borderline value." if x == 0 or y == 0 else d.get((x > 0, y > 0)))
